@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Timetable</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .bookmark {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading for the page -->
+        <h1>My Daily Timetable</h1>
+        
+        <!-- Introduction section -->
+        <div class="section">
+            <h2>About My Routine</h2>
+            <p>This page displays my daily schedule as a computer science student. Maintaining a structured routine helps me stay productive and balanced throughout the day.</p>
+            <p>Below you'll find my timetable, resources I use, and some additional information about my daily activities.</p>
+        </div>
+        
+        <!-- Bookmark target -->
+        <div id="timetable" class="bookmark"></div>
+        
+        <!-- Timetable section -->
+        <div class="section">
+            <h2>Daily Schedule</h2>
+            <p>Here's my typical weekday routine:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6:30 AM - 7:00 AM</td>
+                        <td>Morning Exercise</td>
+                        <td>Home/Outside</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 AM - 8:00 AM</td>
+                        <td>Shower & Breakfast</td>
+                        <td>Home</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM - 10:00 AM</td>
+                        <td>Study Session</td>
+                        <td>Library</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Classes</td>
+                        <td>University</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM - 1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>Cafeteria</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Classes/Labs</td>
+                        <td>University</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 PM - 4:00 PM</td>
+                        <td>Study Group</td>
+                        <td>Library</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 PM - 6:00 PM</td>
+                        <td>Personal Projects</td>
+                        <td>Home</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 PM - 7:00 PM</td>
+                        <td>Dinner</td>
+                        <td>Home</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 PM - 9:00 PM</td>
+                        <td>Leisure Time</td>
+                        <td>Home</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 PM - 10:00 PM</td>
+                        <td>Review & Planning</td>
+                        <td>Home</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 PM</td>
+                        <td>Sleep</td>
+                        <td>Home</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Resources section with lists -->
+        <div class="section">
+            <h2>Resources & Tools</h2>
+            
+            <h3>Definition List of Productivity Tools</h3>
+            <dl>
+                <dt>Google Calendar</dt>
+                <dd>For scheduling and reminders</dd>
+                
+                <dt>Trello</dt>
+                <dd>For task management and project organization</dd>
+                
+                <dt>Forest App</dt>
+                <dd>For focused work sessions using the Pomodoro technique</dd>
+            </dl>
+            
+            <h3>Ordered List of Study Priorities</h3>
+            <ol>
+                <li>Core Classes
+                    <ol type="a">
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Database Systems</li>
+                    </ol>
+                </li>
+                <li>Side Projects</li>
+                <li>Elective Courses</li>
+            </ol>
+            
+            <h3>Unordered List of Weekly Goals</h3>
+            <ul>
+                <li>Complete all assignments
+                    <ul>
+                        <li>Math problem set</li>
+                        <li>Programming project</li>
+                    </ul>
+                </li>
+                <li>Exercise 5 times</li>
+                <li>Read 100 pages</li>
+            </ul>
+        </div>
+        
+        <!-- Links section -->
+        <div class="section">
+            <h2>Useful Links</h2>
+            <p>Here are some resources that help me stay organized:</p>
+            
+            <!-- External link with target -->
+            <p><a href="https://www.todoist.com" target="_blank">Todoist</a> - A great task management app (opens in new tab)</p>
+            
+            <!-- Internal link -->
+            <p><a href="#timetable">Jump to Timetable</a> - Quick navigation to my schedule</p>
+            
+            <!-- Email link -->
+            <p><a href="nandagopal@karunya.edu.in">Email me</a> - Send me your questions</p>
+            
+            <!-- Phone link -->
+            <p><a href="tel:+1234567890">Call me</a> - My phone number</p>
+            
+            <!-- Clickable image link -->
+            <p>Click the image below to visit my university's website:</p>
+            <a href="https://www.university.edu" target="_blank">
+                <img src="https://via.placeholder.com/400x200?text=University+Campus" alt="University Campus" width="400">
+            </a>
+        </div>
+        
+        <!-- Footer with HTML comment -->
+        <!-- This footer section was last updated on June 2023 -->
+        <div class="section">
+            <hr>
+            <p>© 2023 My Daily Timetable. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
